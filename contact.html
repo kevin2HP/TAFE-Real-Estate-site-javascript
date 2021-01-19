@@ -1,0 +1,158 @@
+﻿<!doctype html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <title> INSERT TITLE HERE </title>
+
+  <meta name="author" content="      ADD YOUR NAME AND YOUR EMAIL ADDRESS HERE     ">
+
+  <link rel="stylesheet" href="css/ultimo_real_estate.css">
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+
+<body>
+
+  <div id="wrapper">
+
+
+    <header>
+      <img src="images/ultimo_real_estate_logo.png" class="logo"
+        alt="Ultimo Real Estate, Sydney, Australia">
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="property.html">Property of the Week</a></li>
+        <li><a href="buy_sell_rent.html">Buy-Sell-Rent</a></li>
+        <li><a href="agents.html">Agents</a></li>
+        <li><a href="suburb_profile.html">Suburb Profile</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html" id="current">Contact</a></li>
+      </ul>
+    </nav>
+
+    <main>
+
+      <section id="col1">
+
+        <h1>Contact</h1>
+
+        <ul>
+          <li><strong>Ultimo Real Estate</strong></li>
+          <li>20 Jones Street</li>
+          <li>ULTIMO NSW 2007</li>
+        </ul>
+
+
+        <ul>
+          <li><strong>Mob: +61 123 456 789</strong></li>
+          <li>Tel: +612 1234 5678</li>
+          <li>info@ultimorealestate.com.au</li>
+        </ul>
+
+
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6624.85817291638!2d151.19285829205285!3d-33.87860141454631!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12ae2f6b3e5fb7%3A0xf97500fd5776ca34!2sJones%20St%2C%20Sydney%20NSW!5e0!3m2!1sen!2sau!4v1581408180870!5m2!1sen!2sau"
+          width="570" height="500" allowfullscreen=""></iframe>
+
+      </section>
+
+      <section id="col2">
+        <form class="myForm" onsubmit="return validate();" >
+          <h2>Get In Contact</h2>
+         <!-- start of Name , phone and email fields -->
+          <label for="fName">Full Name *</label>
+          <input type="text" id="fName" name="Name"  placeholder="Full name...">
+          <span id="nameError"></span>
+          
+          <label for="telephone">Phone Number *</label>
+          <input type="tel" id="telephone"  name="Telephone" placeholder="Phone...">
+          <span id="phoneError"></span>
+
+          <label for="email">Email *</label>
+          <input type="email" id="email"  name="Email" placeholder="Email...">
+          <span id="emailError"></span>
+         <!-- end of Name , phone and email fields -->
+
+
+          <!-- start of radio -->
+          <section class="radios">
+            <fieldset>
+           <legend class="largeLabel">Do you want to Buy,Sell or Rent?</legend>
+
+            <label for="buy">
+              <input type="radio"  value="Buy" id="buy" name="rad">Buy
+            </label>
+            <label for="sell">
+              <input type="radio" value="Sell" id="sell" name="rad">Sell
+            </label>
+            <label for="rent">
+              <input type="radio" value="Rent" id="rent" name='rad'>Rent
+            </label>
+            </fieldset>
+            <div id="radioError"></div>
+          </section>
+          <!-- end of radio -->
+
+          <!-- start of checkbox -->
+          <section class='check_box'>
+            <h3>What property type/s are you interested in? Select all that apply</h3>
+          <label for="unit">
+            <input type="checkbox" value="Unit" id="unit" name="check">Unit
+          </label>
+          <label for="townHouse" >
+            <input type="checkbox" value="Townhouse" id="townHouse" name="check">Townhouse
+          </label>
+          <label for="house">
+            <input type="checkbox" value="House" id="house" name="check">House
+          </label>  
+          <span id="checkError"></span>
+        </section>
+          <!-- end of checkbox -->
+
+      <label class="largeLabel" for="roomQuantity">How many bedrooms do you require?(1-10)</label>
+          <input type="number" id="roomQuantity" name="rooms"   placeholder="Enter Valid Number...">
+          <span id="roomError"></span>
+
+          <Section>
+              <label class="largeLabel" for="comment">Comment</label>
+            <textarea id="comment" name="comment" placeholder="Write something..."></textarea>
+            <span id="errorMessage"></span>
+            <button type="submit" class="butt">Submit</button>
+            
+          </Section>
+
+        </form>
+
+      </section>
+
+
+    </main>
+
+    <footer>
+      <ul>
+        <li>&copy; Ultimo Real Estate 20xx</li>
+        <li><a href="www.facebook.com/UltimoRealEstate"><img src="images/facebook.png"
+              alt="Ultimo Real Estate on Facebook"></a></li>
+        <li><a href="www.instagram.com/UltimoRealEstate"><img src="images/instagram.png"
+              alt="Ultimo Real Estate on Instagram"></a></li>
+        <li><a href="www.twitter.com/UltimoRealEstate"><img src="images/twitter.png"
+              alt="Ultimo Real Estate on Twitter"></a></li>
+        <li><a href="legals.html">Legals</a></li>
+      </ul>
+    </footer>
+
+
+  </div>
+<script src="js/contactForm.js"></script>
+</body>
+
+</html>

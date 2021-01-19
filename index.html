@@ -1,0 +1,204 @@
+﻿<!doctype html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <title> INSERT TITLE HERE </title>
+
+  <meta name="author" content="      ADD YOUR NAME AND YOUR EMAIL ADDRESS HERE     ">
+
+  <link rel="stylesheet" href="css/ultimo_real_estate.css">
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+
+<body>
+
+  <div id="wrapper">
+
+
+    <header>
+      <img class="logo" src="images/ultimo_real_estate_logo.png"
+        alt="Ultimo Real Estate, Sydney, Australia">
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="index.html" id="current">Home</a></li>
+        <li><a href="property.html">Property of the Week</a></li>
+        <li><a href="buy_sell_rent.html">Buy-Sell-Rent</a></li>
+        <li><a href="agents.html">Agents</a></li>
+        <li><a href="suburb_profile.html">Suburb Profile</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <main>
+
+      <figure>
+        <img class="homeImage" src="images/bulwara_road.jpg"  alt="Bulwara Road">
+      </figure>
+
+
+      
+      <div class="slideContainer">
+        <h2>Gallery Of Our Latest Property Listings</h2>
+
+<!-- These images have a display property of display:none but are shown when the user clicks on a thumbnail image below   -->
+
+      <div class="slideImages">
+        <!-- This image is displayed on intial page load -->
+        <img alt="A luxurious Living Room populated with furniture"
+          src="https://images.pexels.com/photos/279719/pexels-photo-279719.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
+         <h3>1045/185 Broadway, Ultimo, NSW 2007</h3>
+        <input type="button" class="butt" value="View More">
+      </div>
+
+      <div class="slideImages">
+        <img alt="A modern House"
+          src="https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
+          <h3>46/288 Wattle Street, Ultimo, NSW 2007</h3>
+        <input type="button" class="butt" value="View More">
+      </div>
+
+      <div class="slideImages">
+        <img alt="Dining room with Framed Picture"
+          src="https://images.pexels.com/photos/2995012/pexels-photo-2995012.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
+          <h3>65/849 George Street, Ultimo, NSW 2007
+        <input type="button" class="butt" value="View More">
+
+          </h3>
+        </div>
+
+      <div class="slideImages">
+        <img alt="A large kitchen"
+          src="https://images.pexels.com/photos/349749/kitchen-stove-sink-kitchen-counter-349749.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260.jpg">
+          <h3>2029/185 Broadway, Ultimo, NSW 2007</h3>
+        <input type="button" class="butt" value="View More">
+
+        </div>
+
+      <div class="slideImages">
+        <img alt="Large Bathroom containing a bathtub, sink, toilet and shower"
+          src="https://images.pexels.com/photos/1457847/pexels-photo-1457847.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260">
+          <h3>703/646 Harris Street, Ultimo, NSW 2007</h3>
+        <input type="button" class="butt" value="View More">
+
+        </div>
+
+      <div class="slideImages">
+        <img alt="Modern apartment complex"
+          src="https://images.pexels.com/photos/2462015/pexels-photo-2462015.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
+          <h3>285/71 Jones St, Ultimo, NSW 2007</h3>
+        <input type="button" class="butt" value="View More">
+
+      </div>
+      <div class="slideImages">
+        <img alt="Small modern Kitchen"
+          src="https://images.pexels.com/photos/2089696/pexels-photo-2089696.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
+          <h3>1090/185 Broadway, Ultimo, NSW 2007</h3>
+        <input type="button" class="butt" value="View More">
+
+        </div>
+      <div class="slideImages">
+        <img  alt="Medium sized bathroom"
+          src="https://images.pexels.com/photos/3315291/pexels-photo-3315291.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
+        <h3>51/344 Bulwara Road, Ultimo, NSW 2007</h3>
+        <input type="button" class="butt" value="View More">
+        
+        </div>
+      <div class="slideImages">
+        <img alt="Apartment Complex"
+          src="https://images.pexels.com/photos/1330753/pexels-photo-1330753.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
+          <h3>207/99 Jones Street, Ultimo, NSW 2007</h3>
+        <input type="button" class="butt" value="View More">
+
+        </div>
+
+      <a class="left"  onclick="plusSlides(-1)">❮</a>  <!--Button to swipe left on Slideshow-->
+      <a class="right"  onclick="plusSlides(1)">❯</a>   <!--Button to swipe right on Slideshow-->
+
+
+<!-- Gallery Thumbnails -->
+<!-- These images are displayed in center of screen when clicked -->
+      <div class="row">
+        <div class="column">
+          <img class="thumbnails "
+            src="https://images.pexels.com/photos/279719/pexels-photo-279719.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+            onclick="chosenSlide(1)" alt="A luxurious Living Room populated with furniture">
+            <!--Calling chosenSlide function when clicked and passes in slide number postion as argument-->
+
+        </div>
+        <div class="column">
+          <img class="thumbnails "
+            src="https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+            onclick="chosenSlide(2)" alt="A modern House">
+        </div>
+        <div class="column">
+          <img class="thumbnails "
+            src="https://images.pexels.com/photos/2995012/pexels-photo-2995012.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+            onclick="chosenSlide(3)" alt="Dining room with Framed Picture">
+        </div>
+        <div class="column">
+          <img class="thumbnails "
+            src="https://images.pexels.com/photos/349749/kitchen-stove-sink-kitchen-counter-349749.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+            onclick="chosenSlide(4)" alt="A large kitchen">
+        </div>
+        <div class="column">
+          <img class="thumbnails "
+            src="https://images.pexels.com/photos/1457847/pexels-photo-1457847.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+            onclick="chosenSlide(5)" alt="Large Bathroom containing a bathtub, sink, toilet and shower">
+        </div>
+        <div class="column">
+          <img class="thumbnails "
+            src="https://images.pexels.com/photos/2462015/pexels-photo-2462015.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+            onclick="chosenSlide(6)" alt="Modern apartment complex">
+        </div>
+        <div class="column">
+          <img class="thumbnails "
+            src="https://images.pexels.com/photos/2089696/pexels-photo-2089696.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+            onclick="chosenSlide(7)" alt="Small modern Kitchen">
+        </div>
+        <div class="column">
+          <img class="thumbnails "
+            src="https://images.pexels.com/photos/3315291/pexels-photo-3315291.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+            onclick="chosenSlide(8)" alt="Medium sized bathroom">
+        </div>
+        <div class="column">
+          <img class="thumbnails "
+            src="https://images.pexels.com/photos/1330753/pexels-photo-1330753.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+            onclick="chosenSlide(9)" alt="Apartment Complex">
+        </div>
+      </div>
+
+      <!--End of Gallery Thumbnails -->
+    </div>
+  </main>
+
+    <footer>
+      <ul>
+        <li>&copy; Ultimo Real Estate 20xx</li>
+        <li><a href="www.facebook.com/UltimoRealEstate"><img src="images/facebook.png"
+              alt="Ultimo Real Estate on Facebook"></a></li>
+        <li><a href="www.instagram.com/UltimoRealEstate"><img src="images/instagram.png"
+              alt="Ultimo Real Estate on Instagram"></a></li>
+        <li><a href="www.twitter.com/UltimoRealEstate"><img src="images/twitter.png"
+              alt="Ultimo Real Estate on Twitter"></a></li>
+        <li><a href="legals.html">Legals</a></li>
+      </ul>
+    </footer>
+
+
+  </div>
+
+  <script src="js/index.js"></script>
+
+</body>
+
+</html>
